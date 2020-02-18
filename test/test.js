@@ -10,7 +10,7 @@ var server = supertest.agent("http://localhost:4000");
 describe("SAMPLE unit test", function () {
 
     it("should return home page", function (done) {
-        // calling home page
+        
         server
             .get("/")
             .expect("Content-type", /text/)
